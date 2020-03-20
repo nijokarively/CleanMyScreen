@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_phone"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_38sdp"
+        android:clickable="true"
+        android:contentDescription="@string/phone_img"
+        android:focusable="true"
+        android:onClick="launchFullScreen"
+        android:src="@drawable/flat_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_white"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="116dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="launchFullScreen"
+        app:backgroundTint="@color/flat_purple"
+        app:borderWidth="3dp"
+        app:elevation="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/purple" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_black"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="116dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="launchFullScreen"
+        app:backgroundTint="@color/flat_black"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintStart_toEndOf="@+id/fab_white"
+        app:rippleColor="@color/purple" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_red"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginBottom="36dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="launchFullScreen"
+        app:backgroundTint="@color/flat_red"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toStartOf="@+id/fab_blue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fab_green"
+        app:rippleColor="@color/purple" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_green"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginBottom="36dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="launchFullScreen"
+        app:backgroundTint="@color/flat_green"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toStartOf="@+id/fab_red"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/purple" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_blue"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginBottom="36dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="launchFullScreen"
+        app:backgroundTint="@color/flat_blue"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toStartOf="@+id/fab_rgb"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fab_red"
+        app:rippleColor="@color/purple" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_rgb"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="36dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="launchFullScreen"
+        android:scaleType="fitXY"
+        android:src="@drawable/rgb"
+        app:backgroundTint="@color/flat_purple"
+        app:fabCustomSize="@dimen/_48sdp"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fab_blue"
+        app:maxImageSize="@dimen/_42sdp"
+        app:rippleColor="@color/purple" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_rgb2"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="116dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="launchFullScreen"
+        android:scaleType="fitXY"
+        android:src="@drawable/picker"
+        app:backgroundTint="@color/flat_orange"
+        app:fabCustomSize="@dimen/_48sdp"
+        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintEnd_toStartOf="@+id/fab_white"
+        app:maxImageSize="@dimen/_42sdp"
+        app:rippleColor="@color/purple" />
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="28dp"
+        android:gravity="center_horizontal"
+        android:maxLines="4"
+        android:text="@string/instructions"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintBottom_toTopOf="@+id/fab_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_phone"
+        app:layout_constraintVertical_bias="0.679" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_30ssp"
+        android:gravity="center_horizontal"
+        android:maxLines="4"
+        android:text="@string/back"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/flat_purple"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/img_phone"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_225sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:contentDescription="@string/phone_img"
+        android:src="@drawable/flat_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/_206sdp"
+        android:layout_height="@dimen/_123sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:contentDescription="@string/logo_img"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_phone"
+        app:srcCompat="@drawable/logo_alt" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PixClean</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="instructions">Click on the phone or a color to start</string>
+    <string name="back">Press back key when finished</string>
+    <string name="yes">yup</string>
+    <string name="no">nope</string>
+    <string name="maybe">maybe</string>
+    <string name="no2">no way</string>
+    <string name="warning_title">Seizure warning</string>
+    <string name="warning">This feature might trigger seizures for people with photosensitive epilepsy. \n\nUser discretion is advised. \n\nDo you want to proceed?</string>
+    <string name="intro_welcome_title">Welcome</string>
+    <string name="intro_welcome_msg">Just click on the phone or the appropriate color to make it full screen</string>
+    <string name="intro_swipe_title">Easy to use</string>
+    <string name="intro_swipe_msg">Simply swipe left or right to change color</string>
+    <string name="intro_back_title">Just in case</string>
+    <string name="intro_back_msg">Press back key when finished</string>
+    <string name="intro_warning_title">Be aware</string>
+    <string name="intro_warning_msg">The RBG feature might trigger seizures for people with photosensitive epilepsy \n\nUser discretion is advised</string>
+    <string name="intro_features_title">Few tips</string>
+    <string name="intro_features_msg">White screen for cleaning dirt \n\nBlack screen to clean dust \n\nRed, green, blue to test for dead/stuck pixels</string>
+    <string name="intro_done_title">You are all set</string>
+    <string name="intro_done_msg">LET\'S GET CLEANING</string>
+    <string name="phone_img">Activate fullscreen</string>
+    <string name="logo_img">PixClean</string>
+    <string name="disable_intro_title">Easy enough?</string>
+    <string name="disable_intro_content">Do you want to disable this intro in the future?</string>
+</resources>
